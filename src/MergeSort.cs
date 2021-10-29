@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DataStructures
+namespace Algorithms.Source
 {
     public static class MergeSort
     {

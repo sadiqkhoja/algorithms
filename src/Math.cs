@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DataStructures
+namespace Algorithms.Source
 {
     /// <summary>
     /// Add, Substract, Multiply large integers represented as string

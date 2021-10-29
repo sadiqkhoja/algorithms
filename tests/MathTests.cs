@@ -1,10 +1,8 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using DataStructures;
 using System;
-using System.Collections.Generic;
-using System.Text;
+using Algorithms.Source;
 
-namespace DataStructures.Tests
+namespace Algorithms.Tests
 {
     [TestClass()]
     public class MathTests
@@ -18,7 +16,7 @@ namespace DataStructures.Tests
         [DataRow("9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999", "9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999", "19999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999998")]
         public void AddTest(string num1, string num2, string expectedResult)
         {
-            Assert.AreEqual(expectedResult, Math.Add(num1, num2));
+            Assert.AreEqual(expectedResult, Source.Math.Add(num1, num2));
         }
 
         [TestMethod()]
@@ -30,7 +28,7 @@ namespace DataStructures.Tests
         [DataRow("00100", "9", 1)]
         public void CompareTest(string num1, string num2, int expectedResult)
         {
-            Assert.AreEqual(expectedResult, Math.Compare(num1, num2));
+            Assert.AreEqual(expectedResult, Source.Math.Compare(num1, num2));
         }
 
         [TestMethod()]
@@ -46,7 +44,7 @@ namespace DataStructures.Tests
         [DataRow("1", "100", "-99")]
         public void SubtractTest(string num1, string num2, string expectedResult)
         {
-            Assert.AreEqual(expectedResult, Math.Subtract(num1, num2));
+            Assert.AreEqual(expectedResult, Source.Math.Subtract(num1, num2));
         }
 
         [TestMethod()]
@@ -54,7 +52,7 @@ namespace DataStructures.Tests
         [DataRow("99000", 5, "99000")]
         public void PadZeroesTest(string num, int desireLength, string expectedResult)
         {
-            Assert.AreEqual(expectedResult, Math.PadZeroes(num, desireLength));
+            Assert.AreEqual(expectedResult, Source.Math.PadZeroes(num, desireLength));
         }
 
         [TestMethod()]
@@ -62,7 +60,7 @@ namespace DataStructures.Tests
         [DataRow("12345",6, "012", "345")]
         public void SplitAndPadTest(string number, int n, string expectedA, string expectedB)
         {
-            var (a, b) = Math.PadAndSplit(number.ToCharArray(), n);
+            var (a, b) = Source.Math.PadAndSplit(number.ToCharArray(), n);
             Assert.AreEqual(expectedA, a);
             Assert.AreEqual(expectedB, b);
 
@@ -75,7 +73,7 @@ namespace DataStructures.Tests
         [DataRow("3141592653589793238462643383279502884197169399375105820974944592", "2718281828459045235360287471352662497757247093699959574966967627", "8539734222673567065463550869546574495034888535765114961879601127067743044893204848617875072216249073013374895871952806582723184")]
         public void MultiplyTest(string num1, string num2, string expectedResult)
         {
-            Assert.AreEqual(expectedResult, Math.Multiply(num1, num2));
+            Assert.AreEqual(expectedResult, Source.Math.Multiply(num1, num2));
         }
 
         
@@ -84,7 +82,7 @@ namespace DataStructures.Tests
         [DataRow(3, 2, 4)]
         public void GetNTest(int length1, int length2, int expectedResult)
         {
-            Assert.AreEqual(expectedResult, Math.GetN(length1, length2));
+            Assert.AreEqual(expectedResult, Source.Math.GetN(length1, length2));
         }
     }
 }

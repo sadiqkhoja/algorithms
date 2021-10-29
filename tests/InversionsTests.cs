@@ -1,12 +1,9 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using DataStructures;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Linq;
 using System.IO;
+using Algorithms.Source;
 
-namespace DataStructures.Tests
+namespace Algorithms.Tests
 {
     [TestClass()]
     public class InversionsTests

@@ -1,11 +1,8 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using DataStructures;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Algorithms.Source;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Linq;
 
-namespace DataStructures.Tests
+namespace Algorithms.Tests
 {
     [TestClass()]
     public class MergeSortTests

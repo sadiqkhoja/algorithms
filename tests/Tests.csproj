@@ -17,10 +17,10 @@
     <ProjectReference Include="..\src\Source.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Update="DataFiles\IntegerArray.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+  <ItemGroup>    
+	<None Include="DataFiles/**">
+		<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
   </ItemGroup>
 
 </Project>
